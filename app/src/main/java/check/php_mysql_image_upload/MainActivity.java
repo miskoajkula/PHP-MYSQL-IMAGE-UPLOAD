@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             bitmap = BitmapFactory.decodeFile(file_uri.getPath());
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+            bitmap.recycle();
 
             byte[] array = stream.toByteArray();
             encoded_string = Base64.encodeToString(array, 0);
