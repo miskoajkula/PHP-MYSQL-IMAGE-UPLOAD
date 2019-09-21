@@ -1,0 +1,27 @@
+// Created by Shrutika Singh
+
+#include <iostream>
+using namespace std;
+int main() {
+    float marks;
+    //int marks;
+    /*you can comment either one of them according to the marks you are willing to put.. if you want your numbers to be decimal you can choose float and vice versa*/
+    cin>>marks;
+    if (marks > 33) {
+        if (marks>=90) {
+            cout <<"you scored well!";
+        }
+        else {
+            cout << "you scored okay!";
+        }
+    }
+    else {
+        if (marks<33) {
+            cout << "you failed!";
+        }
+        else {
+            cout << "something went wrong!";
+        }
+    }
+    return 0;
+}
